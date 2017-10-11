@@ -29,12 +29,6 @@ namespace ClashOfClans
         }
 
         // TEST
-<<<<<<< HEAD
-        //holaaa
-
-=======
-        // PRUEBA 2
->>>>>>> b16661328c91d55d8cf6aba709a30034b4fe8a55
 
         
         
