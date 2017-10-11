@@ -19,28 +19,56 @@ namespace ClashOfClans
         public int espacioLibreOscuro;
         List<Tropa_Oscura> tropasOscuras;
         List<Tropa_Normal> tropasNormales;
-        public int capacidadMaxTropas;
+        public int capacidadMaxTropasNormales;
         public int capacidadMaxTropasOscuras;
+        public int espacioUsadoTropasNormales;
+        public int espacioUsadoTropasOscuras;
 
         public Castillo()
         {
             this.capacidadTotalOro = 500;
-            this.espacioUsadoOro = 0;         // TERMINAR ESTE CONSTRUCTOR
-        espacioLibreOro;
-        capacidadTotalElixir;
-        espacioUsadoElixir;
-        espacioLibreElixir;
-        capacidadTotalOscuro;
-        espacioUsadoOscuro;
-        espacioLibreOscuro;
-        this.tropasOscuras = new List>;
-        List<Tropa> tropasNormales;
-        public int capacidadMaxTropas;
-        public int capacidadMaxTropasOscuras;
+            this.espacioUsadoOro = 0;         
+            this.espacioLibreOro = 500;
+            this.capacidadTotalElixir = 250;
+            this.espacioUsadoElixir = 0;
+            this.espacioLibreElixir = 250;
+            this.capacidadTotalOscuro = 150;
+            this.espacioUsadoOscuro = 0;
+            this.espacioLibreOscuro = 150;
+            this.tropasOscuras = new List<Tropa_Oscura>();
+            this.tropasNormales = new List<Tropa_Normal>();
+            this.capacidadMaxTropasNormales = 50;
+            this.capacidadMaxTropasOscuras = 35;
+            this.espacioUsadoTropasNormales = 0;
+            this.espacioUsadoTropasOscuras = 0;
 
-    }
+        }
         public string AgregarTropaNormal(Tropa_Normal T)
         {
+            if(espacioUsadoTropasNormales + T.espacioOcupado <= this.capacidadMaxTropasNormales)
+            {
+                tropasNormales.Add(T);
+                espacioUsadoTropasNormales += T.espacioOcupado;
+                return "Tropa agregada con éxito!";
+            }
+            else
+            {
+                return "Espacio insuficiente :(";
+            }
+        }
+
+        public string AgregarTropaOscura(Tropa_Oscura T)
+        {
+            if (espacioUsadoTropasOscuras + T.espacioOcupado <= this.capacidadMaxTropasOscuras)
+            {
+                tropasOscuras.Add(T);
+                espacioUsadoTropasOscuras += T.espacioOcupado;
+                return "Tropa Oscura agregada con éxito!";
+            }
+            else
+            {
+                return "Espacio insuficiente :(";
+            }
 
         }
 
