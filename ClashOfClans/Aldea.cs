@@ -12,7 +12,10 @@ namespace ClashOfClans
         public int cant_oro;
         public int cant_ElixirR;
         public int cant_ElixirO;
-        public List<IAlmacenamiento> 
+        public List<IAlmacenamiento> almacenes;
+        public List<Campamento> campamentos;
+        public Castillo castillo;
+        
 
         public Aldea(string nombre, int oro, int rojo, int oscuro)
         {

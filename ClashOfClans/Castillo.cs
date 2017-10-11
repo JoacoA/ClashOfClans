@@ -18,9 +18,27 @@ namespace ClashOfClans
         public int espacioUsadoOscuro;
         public int espacioLibreOscuro;
         List<Tropa_Oscura> tropasOscuras;
+        List<Tropa_Normal> tropasNormales;
+        public int capacidadMaxTropas;
+        public int capacidadMaxTropasOscuras;
+
+        public Castillo()
+        {
+            this.capacidadTotalOro = 500;
+            this.espacioUsadoOro = 0;         // TERMINAR ESTE CONSTRUCTOR
+        espacioLibreOro;
+        capacidadTotalElixir;
+        espacioUsadoElixir;
+        espacioLibreElixir;
+        capacidadTotalOscuro;
+        espacioUsadoOscuro;
+        espacioLibreOscuro;
+        this.tropasOscuras = new List>;
         List<Tropa> tropasNormales;
         public int capacidadMaxTropas;
+        public int capacidadMaxTropasOscuras;
 
+    }
         public string AgregarTropaNormal(Tropa_Normal T)
         {
 
