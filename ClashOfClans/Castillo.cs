@@ -23,9 +23,13 @@ namespace ClashOfClans
         public int capacidadMaxTropasOscuras;
         public int espacioUsadoTropasNormales;
         public int espacioUsadoTropasOscuras;
+        public int ID;
+        public static int counter = 0;
 
         public Castillo()
         {
+            counter++;
+            this.ID = counter;
             this.capacidadTotalOro = 500;
             this.espacioUsadoOro = 0;         
             this.espacioLibreOro = 500;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClashOfClans
 {
-    class Ayuntamiento
+    class Ayuntamiento : IAlmacenamiento 
     {
         public int capacidadTotalOro;
         public int espacioUsadoOro;
@@ -15,6 +15,7 @@ namespace ClashOfClans
         public int espacioUsadoElixir;
         public int espacioLibreElixir;
 
+        public int Almacenar(int i) { }
         public int AlmacenarOro(int e) //Devuelve la cantidad de "elemento" que no pudo ser almacenado, en el caso de que devuelva 0, es porque toda la cantidad
                                        //de elemento que se deseó almacenar, efectivamente fue almacenado
         {

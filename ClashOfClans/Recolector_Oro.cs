@@ -9,13 +9,10 @@ namespace ClashOfClans
     class Recolector_Oro 
     {
         public int capacidadTotal;
-        public int espacioLibre;
-        public List<Almacen_Oro> oro;
 
-        public Recolector_Oro(int capacidadTotal)
+        public  Recolector_Oro(int capacidadTotal)
         {
-            this.capacidadTotal = 6;
-            this.oro = new List<Almacen_Oro>();
+            this.capacidadTotal = 5000;
         }
 
         public string Recolectar(Almacen_Oro O)

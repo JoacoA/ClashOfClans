@@ -19,8 +19,8 @@ namespace ClashOfClans
             if(e <= espacioLibre)
             {
                 espacioUsado += e;
-                espacioLibre -= e;
-                return 0;
+                espacioLibre -= e;                                          // MÉTODOS GENERALES, NO SIRVEN EN CASOS ESPECÍFICOS YA QUE VARÍA EL TIPO DE RECURSO 
+                return 0;                                                   // POR LO TANTO EL NOMBRE DEL ATRIBUTO
             }
             else
             {

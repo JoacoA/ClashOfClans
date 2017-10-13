@@ -15,6 +15,9 @@ namespace ClashOfClans
         public List<IAlmacenamiento> almacenes;
         public List<Campamento> campamentos;
         public Castillo castillo;
+        public Altar_Rey altarRey;
+        public Altar_Reina altarReina;
+        public Altar_Warden altarWarden;
         
 
         public Aldea(string nombre, int oro, int rojo, int oscuro)
@@ -28,6 +31,10 @@ namespace ClashOfClans
 
         public void AgregarEntidad (Entidad e)
         {
+            if(e is IEdificio)
+            {
+                if(e is )
+            }
 
         }
 
