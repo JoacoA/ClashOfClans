@@ -8,7 +8,9 @@ namespace ClashOfClans
 {
     class Dragon_Bebe:Tropa_Normal
     {
-        public Dragon_Bebe(string nombre, int daño, int velocidad, string tipo, string moneda, int vida, int costo, int nivel,int espacioOcupado) : base(nombre, daño, velocidad, tipo, moneda, vida, costo, nivel, espacioOcupado)
+
+        
+        public Dragon_Bebe()
         {
             this.nombre = "Dragón bebé";
             this.daño = 8;
