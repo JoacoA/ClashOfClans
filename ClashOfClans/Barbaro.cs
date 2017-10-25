@@ -8,7 +8,7 @@ namespace ClashOfClans
 {
     class Barbaro : Tropa_Normal
     {
-        public Barbaro(string nombre, int daño, int velocidad, string tipo, string moneda, int vida, int costo, int nivel) : base(nombre, daño, velocidad, tipo, moneda, vida, costo, nivel)
+        public Barbaro()
         {
             this.nombre = "Barbaro";
             this.daño = 8;
